@@ -1,0 +1,25 @@
+---
+
+boss__etckeeper__supported_vcs:
+  - git
+  - hg
+  - bzr
+  - darcs
+
+
+# .. envvar:: boss__etckeeper__vcs_command_to_package_mapping:
+#
+# Predefined VCS to package mapping (only if the two differ).
+boss__etckeeper__vcs_command_to_package_mapping:
+  hg: 'mercurial'
+
+
+# .. envvar:: boss__etckeeper__highlevel_to_lowlevel_package_manager_mapping
+#
+# Predefined high-level to low-level package manager mapping.
+boss__etckeeper__highlevel_to_lowlevel_package_manager_mapping:
+  apt: 'dpkg'
+  yum: 'rpm'
+  dnf: 'rpm'
+  zypper: 'rpm'
+  # 'pacman-g2': ''
