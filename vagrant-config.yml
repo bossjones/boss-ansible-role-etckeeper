@@ -10,3 +10,5 @@
 :groups:
   etckeeper1:
     - etckeeper1
+  etckeeper_servers:
+    - etckeeper1

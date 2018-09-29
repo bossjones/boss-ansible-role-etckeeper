@@ -2,13 +2,14 @@
 
 # no_log: true
 
-- hosts: etckeeper
+- hosts: etckeeper_servers
   gather_facts: True
   become: yes
   become_method: sudo
   tags:
-    - dnsmasq
+    - etckeeper
   roles:
+    - role: boss-ansible-role-bootstrap
     - role: boss-ansible-role-core
     - role: boss-ansible-role-fact
     - role: boss-ansible-role-environment
