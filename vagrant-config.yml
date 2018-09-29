@@ -1,0 +1,12 @@
+# https://gist.github.com/gnarf/b103e77f37236ca72d8e
+:vms:
+  etckeeper1:
+    :hostname: "etckeeper1"
+    :ip: "192.168.34.100"
+    :ram: 512
+    :cpu: 1
+    :box: "debian/stretch64"
+
+:groups:
+  etckeeper1:
+    - etckeeper1
