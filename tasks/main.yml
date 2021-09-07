@@ -113,4 +113,4 @@
 
 - name: Create root commit
   command: etckeeper commit 'Initial commit created by Ansible.'
-  when: boss__etckeeper__register_init|changed
+  when: boss__etckeeper__register_init is changed
